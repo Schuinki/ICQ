@@ -1,0 +1,13 @@
+import math
+c1 = float(input('Digite o real do 1o:'))
+c2 = float(input('Digite o real do 2o:'))
+c3 = float(input('Digite o imaginario do 1o:'))
+c4 = float(input('Digite o imaginario do 2o:'))
+complex1 = complex(c1, c3)
+complex2 = complex(c2, c4)
+mod_complex1 = math.sqrt(c1*c1 + c3*c3)
+mod_complex2 = math.sqrt(c2*c2 + c4*c4)
+print(f'|{c1}+{c3}i||{c2}+{c4}i| = {mod_complex2*mod_complex1}')
+print(f'|({c1}+{c3}i)({c2}+{c4}i)| = {mod_complex2*mod_complex1}')
+print(f'|({c1}+{c3}i) + ({c2}+{c4}i)| = {math.sqrt((c1+c2)**2 + (c3+c4)**2)}')
+print(f'|({c1}+{c3}i)| + |({c2}+{c4}i)| = {mod_complex2+mod_complex1}')
